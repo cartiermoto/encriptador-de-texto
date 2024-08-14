@@ -1,0 +1,136 @@
+:root{
+    --dark-blue:#0A3871;
+    --light-blue: #f3f5fc;
+    --interfont: "Inter", sans-serif;
+    --maincolor: #F3F5FC;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color:var(--maincolor);
+    font-family:var(--interfont);
+}
+
+header{
+    margin-bottom: 5rem;
+    width: 60%;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+header img{
+    width: 120px;
+    height: 48px;
+}
+
+.form__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70dvh;
+}
+
+.form__input{
+    width: 100%;
+    max-width: 577px;
+    border-color: transparent;
+    height: 64dvh;
+    overflow: auto;
+    outline: none;
+    color: var(--dark-blue);
+    font-size: 3.2rem;
+    background-color: var(--light-blue);
+
+}
+
+::placeholder{
+    color: var(--dark-blue);
+}
+
+
+
+.form__btn{
+    background: var(--dark-blue);
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid var(--dark-blue);
+    font-weight: 600;
+}
+
+.submit__container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.alert__msj{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.form__btn--secundary{
+
+    background-color: transparent;
+    color: var(--dark-blue);
+}
+
+.result{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    height: 72dvh;
+    border-radius: 32px;
+    max-width: 40rem;
+    width: 100%;
+}
+
+.result__img{
+
+    display: block;
+
+}
+
+
+
+@media screen and (max-widht:768px){
+    main{
+        flex-direction: column;
+    }
+
+
+    .result{
+        height: auto;
+        max-width: 624px;
+        margin-top: 2rem;
+        min-height: 186px;
+    }
+
+    .result__img{
+        display: none;
+    }
+
+    .header__img{
+        width: 58px;
+    }
+
+    .submit__container{
+        justify-content: center;
+    }
+
+}
