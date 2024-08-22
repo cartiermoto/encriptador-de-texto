@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Encriptador de Texto</title>
   </head>
   <body>
@@ -15,7 +19,8 @@
     </header>
     <main>
       <form class="form__section">
-        <textarea class="form__input"
+        <textarea
+          class="form__input"
           name=""
           id=""
           placeholder="Ingrese el texto aquí"
@@ -23,29 +28,34 @@
           rows="10"
         ></textarea>
         <div class="btn__container">
-        <div class="submit__container">
-        
+          <div class="submit__container">
             <div class="alert__msj">
               <img src="alert__icon.png" alt="" /><span
                 >Solo letras minúsculas y sin acentos</span
               >
             </div>
           </div>
-          <input class="form__btn"  type="submit" value="Encriptar" />
-          <input class="form__btn form__btn--secundary" type="submit" value="Desencriptar" />
+          <input class="form__btn" type="submit" value="Encriptar" />
+          <input
+            class="form__btn form__btn--secundary"
+            type="submit"
+            value="Desencriptar"
+          />
         </div>
       </form>
 
       <aside class="result">
         <img src="Muneco.png" alt="" / class="result__img">
+        <div class="loader hidden"></div>
         <div class="result__container">
           <h3 class="result__title">Ningun mensaje fue encontrado</h3>
           <p class="result__text">
             Ingresa el texto que desees encriptar o desencriptar.
           </p>
-          <button class="form__btn form__btn--secundary hidden">Copiar</button>
+          <button class="result__btn form__btn form__btn--secundary hidden">Copiar</button>
         </div>
       </aside>
     </main>
+    <script src="encriptador.js"></script>
   </body>
 </html>
